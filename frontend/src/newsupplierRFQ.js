@@ -60,20 +60,12 @@ class newsupplierRFQ extends Component{
   }
 
   componentDidMount(){
-    axios.get('http://127.0.0.1:8000/api/rfq_header/')
+    axios.get('http://127.0.0.1:8000/api/rfq_get_last_id/')
           .then(res => {
-            this.setState({
-                rfq_header : res.data
-            });
-            const last = [];
-            const len = (this.state.rfq_header.length - 1 );
-            this.state.rfq_header.map((no,i) => {
-              last[i] = no.rfq_no
-            })
-            var rfq_no = last[len];
+
+
+            var rfq_no = 101+res.data[0]['id']+1;
             if (rfq_no) {
-              rfq_no = rfq_no.split('RFQ/SP/')
-              rfq_no = parseInt(rfq_no[1]) + 1;
               rfq_no = 'RFQ/SP/'+rfq_no+'';
               this.setState({
                   supplier_rfq_no: rfq_no

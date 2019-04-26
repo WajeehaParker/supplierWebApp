@@ -13,3 +13,9 @@ class RfqSupplierHeaderSerializer(serializers.ModelSerializer):
     class Meta:
         model = RfqSupplierHeader
         fields = '__all__'
+
+
+class RfqGetLastIDSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = RfqSupplierHeader
+        fields = ['id']
