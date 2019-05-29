@@ -35,7 +35,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
       <div className="contain">
         <h4 style={{paddingLeft:"45%"}}>RFQ</h4>
         <Button id="newBtn" type="submit" href="/newcustomerRFQ">Add New</Button>
-        <div className='scrollable' style={{height:"300px"}}>
+        <div className='scrollable' style={{height:"450px"}}>
           <Table responsive>
             <thead>
               <tr>

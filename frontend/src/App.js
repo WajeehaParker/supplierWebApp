@@ -9,6 +9,8 @@ import './App.css';
 import Header from './Header';
 import Login from './Login';
 
+import inventory from './Inventory';
+
 import supplierRFQ from './supplierRFQ';
 import newsupplierRFQ from './newsupplierRFQ';
 import editsupplierRfq from './editsupplierRFQ';
@@ -56,41 +58,45 @@ class App extends Component {
 
               // <Route path="/" exact strict component={Login} />
 
+              // <Header />
+              //
+              // <Route path="/Home" exact strict render={()=>{return(<h1>Home</h1>)}} />
+              // <Route path="/inventory" exact strict component={inventory} />
+              //
+              // <Route path="/supplierRFQ" exact strict component={supplierRFQ} />
+              // <Route path="/newsupplierRFQ" exact strict component={newsupplierRFQ} />
+              // <Route path="/editsupplierRFQ/:rfq_no" exact strict component={editsupplierRfq} />
+              // <Route path="/supplierQuotation" exact strict component={supplierQuotation} />
+              // <Route path="/newsupplierQuotation" exact strict component={newsupplierQuotation} />
+              // <Route path="/editsupplierQuotation" exact strict component={editsupplierQuotation} />
+              // <Route path="/supplierPurchaseOrder" exact strict component={supplierPurchaseOrder} />
+              // <Route path="/newsupplierPurchaseOrder" exact strict component={newsupplierPurchaseOrder} />
+              // <Route path="/editsupplierPurchaseOrder" exact strict component={editsupplierPurchaseOrder} />
+              // <Route path="/supplierDeliveryChallan" exact strict component={supplierDeliveryChallan} />
+              // <Route path="/newsupplierDeliveryChallan" exact strict component={newsupplierDeliveryChallan} />
+              // <Route path="/editsupplierDeliveryChallan" exact strict component={editsupplierDeliveryChallan} />
+              // <Route path="/supplierMRN" exact strict component={supplierMRN} />
+              // <Route path="/newsupplierMRN" exact strict component={newsupplierMRN} />
+              // <Route path="/editsupplierMRN" exact strict component={editsupplierMRN} />
+              //
+              // <Route path="/customerRFQ" exact strict component={customerRFQ} />
+              // <Route path="/newcustomerRFQ" exact strict component={newcustomerRFQ} />
+              // <Route path="/editcustomerRFQ" exact strict component={editcustomerRfq} />
+              // <Route path="/customerQuotation" exact strict component={customerQuotation} />
+              // <Route path="/newcustomerQuotation" exact strict component={newcustomerQuotation} />
+              // <Route path="/editcustomerQuotation" exact strict component={editcustomerQuotation} />
+              // <Route path="/customerPurchaseOrder" exact strict component={customerPurchaseOrder} />
+              // <Route path="/newcustomerPurchaseOrder" exact strict component={newcustomerPurchaseOrder} />
+              // <Route path="/editcustomerPurchaseOrder" exact strict component={editcustomerPurchaseOrder} />
+              // <Route path="/customerDeliveryChallan" exact strict component={customerDeliveryChallan} />
+              // <Route path="/newcustomerDeliveryChallan" exact strict component={newcustomerDeliveryChallan} />
+              // <Route path="/editcustomerDeliveryChallan" exact strict component={editcustomerDeliveryChallan} />
+              // <Route path="/customerMRN" exact strict component={customerMRN} />
+              // <Route path="/newcustomerMRN" exact strict component={newcustomerMRN} />
+              // <Route path="/editcustomerMRN" exact strict component={editcustomerMRN} />
+
           }
-            <Header />
-
-            <Route path="/Home" exact strict render={()=>{return(<h1>Home</h1>)}} />
-            <Route path="/supplierRFQ" exact strict component={supplierRFQ} />
-            <Route path="/newsupplierRFQ" exact strict component={newsupplierRFQ} />
-            <Route path="/editsupplierRFQ/:rfq_no" exact strict component={editsupplierRfq} />
-            <Route path="/supplierQuotation" exact strict component={supplierQuotation} />
-            <Route path="/newsupplierQuotation" exact strict component={newsupplierQuotation} />
-            <Route path="/editsupplierQuotation" exact strict component={editsupplierQuotation} />
-            <Route path="/supplierPurchaseOrder" exact strict component={supplierPurchaseOrder} />
-            <Route path="/newsupplierPurchaseOrder" exact strict component={newsupplierPurchaseOrder} />
-            <Route path="/editsupplierPurchaseOrder" exact strict component={editsupplierPurchaseOrder} />
-            <Route path="/supplierDeliveryChallan" exact strict component={supplierDeliveryChallan} />
-            <Route path="/newsupplierDeliveryChallan" exact strict component={newsupplierDeliveryChallan} />
-            <Route path="/editsupplierDeliveryChallan" exact strict component={editsupplierDeliveryChallan} />
-            <Route path="/supplierMRN" exact strict component={supplierMRN} />
-            <Route path="/newsupplierMRN" exact strict component={newsupplierMRN} />
-            <Route path="/editsupplierMRN" exact strict component={editsupplierMRN} />
-
-            <Route path="/customerRFQ" exact strict component={customerRFQ} />
-            <Route path="/newcustomerRFQ" exact strict component={newcustomerRFQ} />
-            <Route path="/editcustomerRFQ" exact strict component={editcustomerRfq} />
-            <Route path="/customerQuotation" exact strict component={customerQuotation} />
-            <Route path="/newcustomerQuotation" exact strict component={newcustomerQuotation} />
-            <Route path="/editcustomerQuotation" exact strict component={editcustomerQuotation} />
-            <Route path="/customerPurchaseOrder" exact strict component={customerPurchaseOrder} />
-            <Route path="/newcustomerPurchaseOrder" exact strict component={newcustomerPurchaseOrder} />
-            <Route path="/editcustomerPurchaseOrder" exact strict component={editcustomerPurchaseOrder} />
-            <Route path="/customerDeliveryChallan" exact strict component={customerDeliveryChallan} />
-            <Route path="/newcustomerDeliveryChallan" exact strict component={newcustomerDeliveryChallan} />
-            <Route path="/editcustomerDeliveryChallan" exact strict component={editcustomerDeliveryChallan} />
-            <Route path="/customerMRN" exact strict component={customerMRN} />
-            <Route path="/newcustomerMRN" exact strict component={newcustomerMRN} />
-            <Route path="/editcustomerMRN" exact strict component={editcustomerMRN} />
+            <Login/>
 
           </div>
         </Router>

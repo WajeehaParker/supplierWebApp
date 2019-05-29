@@ -35,7 +35,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
       <div className="contain">
         <h4 style={{paddingLeft:"40%"}}>Delivery Challan</h4>
         <Button id="newBtn" type="submit" href="/newsupplierDeliveryChallan">Add New</Button>
-        <div className='scrollable' style={{height:"300px"}}>
+        <div className='scrollable' style={{height:"450px"}}>
           <Table responsive>
             <thead>
               <tr>

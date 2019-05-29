@@ -55,6 +55,7 @@ class Header extends Component{
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="centralNavMenu">
               <span><Link onClick={this.noDropdown} to="/Home">Home</Link></span>
+              <span><Link onClick={this.noDropdown} to="/inventory">Inventory</Link></span>
               <span><Link onClick={this.toggleSupplierDropdown}>Suppliers</Link></span>
               <span><Link onClick={this.toggleCustomerDropdown}>Customers</Link></span>
               <span><Link onClick={this.toggleAccountsDropdown}>Accounts</Link></span>

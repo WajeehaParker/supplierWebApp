@@ -56,7 +56,7 @@ import axios from 'axios';
       <div className="contain">
         <h4 style={{paddingLeft:"45%"}}>RFQ</h4>
         <Button id="newBtn" type="submit" href="/newsupplierRFQ">Add New</Button>
-        <div className='scrollable' style={{height:"300px"}}>
+        <div className='scrollable' style={{height:"450px"}}>
           <Table responsive>
             <thead>
               <tr>
